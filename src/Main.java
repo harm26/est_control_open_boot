@@ -56,7 +56,50 @@ public class Main {
             default:
                 System.out.println("no hay estacion");
         }
+
+        System.out.println("ejercicio con la class Persona desde aqui------------------");
+
+        Persona persona = new Persona();
+
+        persona.setEdad(46);
+        System.out.println("la edad de persona es: " + persona.getEdad());
+        persona.setNombre("Humberto");
+        System.out.println("Su nombre es: " + persona.getNombre());
+        persona.setNumTelefono(123123);
+        System.out.println("y su numero de telefono es: " + persona.getNumTelefono());
+
 }
 }
+
+class Persona{
+    private int edad;
+    private String nombre;
+    private int numTelefono;
+
+    public int getEdad() {
+        return edad;
+    }
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public String getNombre() {
+        return nombre;
+    }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public int getNumTelefono() {
+        return numTelefono;
+    }
+
+    public void setNumTelefono(int numTelefono) {
+        this.numTelefono = numTelefono;
+    }
+}
+
+
 
 
