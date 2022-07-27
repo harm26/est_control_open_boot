@@ -68,6 +68,21 @@ public class Main {
         persona.setNumTelefono(123123);
         System.out.println("y su numero de telefono es: " + persona.getNumTelefono());
 
+        System.out.println("class Cliente");
+
+        Cliente cliente = new Cliente();
+
+        cliente.setEdad(46);
+        System.out.println("la edad de cliente es: " + cliente.getEdad());
+        cliente.setNombre("Humberto");
+        System.out.println("Su nombre es: " + cliente.getNombre());
+        cliente.setNumTelefono(123123);
+        System.out.println("y su numero de telefono es: " + cliente.getNumTelefono());
+        cliente.setCredito(1000);
+        System.out.println("El credito del cliente es hasta: $" + cliente.getCredito());
+
+
+
 }
 }
 
@@ -98,6 +113,23 @@ class Persona{
     public void setNumTelefono(int numTelefono) {
         this.numTelefono = numTelefono;
     }
+}
+
+class Cliente extends Persona {
+
+    private int credito;
+
+    public void setCredito(int credito) {
+        this.credito = credito;
+    }
+
+    public int getCredito() {
+        return credito;
+    }
+}
+
+class Trabajador extends Persona{
+    private int salario;
 }
 
 
